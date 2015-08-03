@@ -3,7 +3,7 @@ import json
 
 hostname = 'https://preprod-apibelgrano.educ.ar'
 path 	 = '/1.0/videos/' 
-app_key  = '123'
+app_key  = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 id       = '40373'
 fields   = [
 	'id',

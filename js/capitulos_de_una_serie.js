@@ -6,9 +6,9 @@ var server = http.createServer(function(req, res) {
 });
 server.listen(3030);
 
-var hostname = 'https://preprod-apibelgrano.educ.ar';
+var hostname = 'https://apibelgrano.educ.ar';
 var path 	 = '/1.0/videos/';
-var app_key  = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+var app_key  = '123';
 var fields	 = '*';
 var filters  = {
 	serie : 'Ciencia vs. Ficción', 
@@ -22,23 +22,13 @@ var params 	 = {
 
 var query = encodeURIComponent(JSON.stringify(params));
 
-var options = {
- 		hostname: hostname,
-	 	port: '8080',
- 		path: path + query,
- 		method: 'GET',
- 		headers: { 'Content-Type': 'application/json' }
-};
+var url = hostname + path + query;
 
-var req = http.request(options, function(res) {
-	res.setEncoding('utf8');
-	res.on('data', function (data) {
-   		console.log( data ); 
-	});
+var request = require('/usr/local/lib/node_modules/request');
+request(url, function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    console.log( body ) 
+  } else {
+  	console.log( error );
+  }
 });
-
-req.on('error', function(e) {
-	console.log('problem with request: ' + e.message);
-});
-
-req.end();

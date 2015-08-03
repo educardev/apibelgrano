@@ -14,4 +14,5 @@ query = json.dumps(params)
 url = hostname + path + query
 
 r = requests.get(url)
+
 print r.json()

@@ -7,7 +7,7 @@
  * 
  */
 $service_url = 'https://preprod-apibelgrano.educ.ar/1.0/videos';
-$api_key     = '123';
+$api_key     = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 $fields      = array();
 $filters     = array();
 
@@ -16,7 +16,7 @@ $params = [
     'fields'  => $fields,
     'filters' => $filters,
     'pretty'  => true,
-    'limit'   => 50,
+    'limit'   => 10,
 ];
 
 function get_response($url) {
