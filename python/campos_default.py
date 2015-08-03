@@ -1,7 +1,7 @@
 import requests
 import json
 
-hostname = 'https://preprod-apibelgrano.educ.ar'
+hostname = 'https://labs.educ.ar'
 path 	 = '/1.0/videos/' 
 app_key  = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 fields   = []

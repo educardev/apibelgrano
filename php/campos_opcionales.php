@@ -6,7 +6,7 @@
  * Ejemplo de llamado a endpoint: Obtención de capitulos de una serie
  * 
  */
-$service_url = 'https://preprod-apibelgrano.educ.ar/1.0/videos';
+$service_url = 'https://labs.educ.ar/1.0/videos';
 $api_key     = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 $fields      = [
                     'id', 

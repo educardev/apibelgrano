@@ -6,7 +6,7 @@ var server = http.createServer(function(req, res) {
 });
 server.listen(3030);
 
-var hostname = 'https://apibelgrano.educ.ar';
+var hostname = 'https://labs.educ.ar';
 var path 	 = '/1.0/videos/';
 var id		 = '40373';
 var app_key  = '123';
