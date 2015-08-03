@@ -7,7 +7,7 @@
  * 
  */
 $service_url = 'https://preprod-apibelgrano.educ.ar/1.0/videos';
-$api_key     = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+$api_key     = '123';
 $fields      = array();
 $filters     = array();
 
